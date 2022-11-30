@@ -14,4 +14,4 @@ This project is related to my task from university.
 - Bootstrap
 - MySQL
 ## Functionalities
-It gives users the oppertunety of publishing for sale, as well as, looking at offers to buy properties . What is more, there is panel for admins by which they can control what is being published.
+It gives users the opportunity of publishing for sale, as well as, looking at offers to buy properties . What is more, there is panel for admins by which they can control what is being published.
