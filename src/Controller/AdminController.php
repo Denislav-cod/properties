@@ -2,6 +2,8 @@
 
 namespace App\Controller;
 
+use App\Entity\Role;
+use App\Form\RoleType;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
@@ -11,8 +13,11 @@ class AdminController extends AbstractController
     #[Route('/admin', name: 'app_admin')]
     public function index(): Response
     {
+        $role = new Role();
+        $roleForm = $this->createForm(RoleType::class, $role);
         return $this->render('admin/admin.html.twig', [
             'controller_name' => 'AdminController',
+            'roleForm' => $roleForm->createView(),
         ]);
     }
 }
